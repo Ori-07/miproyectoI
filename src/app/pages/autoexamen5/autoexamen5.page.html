@@ -1,0 +1,30 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-buttons danger="start">
+            <ion-back-button defaulHref></ion-back-button>
+        </ion-buttons>
+        <h1>Es momento de apretar un poco</h1>
+        <ion-item color="light">
+            <ion-icon slot="star" name="pin"></ion-icon>
+
+
+            <strong>Aprieta los pezones suavemente para comprobar si hay sangre o cualquier secreción que no tengas normalmente. Asegurate que la parte superior de tus brazos no estan hinchados. Recuerda que debes mantener los dedos juntos y oprimir con los dedos
+                planos, no con las puntas. Si oprimes demasiado, no podras sentir nada, si no oprimes lo suficiente, no podrá detectar en profundida. Repite el proceso con el otro brazo.</strong>
+        </ion-item>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-card>
+        <ion-img src="/assets/img/mama4.gif"> </ion-img>
+    </ion-card>
+
+    <ion-button [routerLink]="['/resultado/']">
+        <ion-icon name="woman"></ion-icon>
+        <ion-label>Finalizado</ion-label>
+    </ion-button>
+    <ion-button [routerLink]="['/autoexamen1/']">
+        <ion-icon name="arrow-undo"></ion-icon>
+        <ion-label>Repetir</ion-label>
+    </ion-button>
+</ion-content>

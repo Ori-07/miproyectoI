@@ -1,0 +1,23 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-buttons danger="start">
+            <ion-back-button defaulHref></ion-back-button>
+        </ion-buttons>
+    </ion-toolbar>
+</ion-header>
+<h1>Encontraste algo extraño?</h1>
+<ion-content>
+    <ion-card>
+        <ion-img src="/assets/img/analisis-de-los-datos.png"> </ion-img>
+    </ion-card>
+    <ion-button [routerLink]="['/respira/']">
+        <ion-icon name="sad"></ion-icon>
+        <ion-label>Si, puede ser</ion-label>
+
+    </ion-button>
+    <ion-button [routerLink]="['/programar_prox/']">
+        <ion-icon name="happy"></ion-icon>
+        <ion-label>No</ion-label>
+    </ion-button>
+
+</ion-content>

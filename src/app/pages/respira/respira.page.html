@@ -1,0 +1,22 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-buttons danger="start">
+            <ion-back-button defaulHref></ion-back-button>
+        </ion-buttons>
+    </ion-toolbar>
+</ion-header>
+<h1>Espera un momento</h1>
+
+<h2>No te angusties, tómate unos minutos inhala y exhala </h2>
+<ion-content>
+    <ion-card>
+        <ion-img src="/assets/img/respira.gif"></ion-img>
+        <h2>Cuando estés calmada continúa</h2>
+    </ion-card>
+
+    <ion-button [routerLink]="['/cuestionario-e/']">
+        <ion-icon name="arrow-redo-sharp"></ion-icon>
+        <ion-label>Continuar</ion-label>
+
+    </ion-button>
+</ion-content>

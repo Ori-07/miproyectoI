@@ -1,0 +1,97 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-buttons slot="start">
+
+
+            <ion-icon (click)="openMenu()" style="font-size: 40px;" color="background" name="options"></ion-icon>
+            <br>
+            <br>
+            <ion-img [src]="img"></ion-img>
+        </ion-buttons>
+    </ion-toolbar>
+
+
+</ion-header>
+
+
+
+
+
+
+
+<ion-menu side="start" menuId="first" contentId="main">
+    <ion-header>
+        <ion-toolbar color="primary">
+            <ion-title>Menu</ion-title>
+        </ion-toolbar>
+    </ion-header>
+    <ion-content>
+        <ion-list>
+
+            <ion-item [routerLink]="['/perfil/']">Mi perfil</ion-item>
+            <ion-item [routerLink]="['/tratamiento/']">Tratamiento</ion-item>
+            <ion-item [routerLink]="['/recordatorio/']">Recordatorio</ion-item>
+            <ion-item [routerLink]="['/privacidad/']">Privacidad y condiciones de uso</ion-item>
+            <ion-item [routerLink]="['/configuracion/']">Configuracion</ion-item>
+            <ion-item>Compartir</ion-item>
+            <ion-item>Cerrar sesion</ion-item>
+
+        </ion-list>
+
+
+    </ion-content>
+</ion-menu>
+<ion-router-outlet id="main"></ion-router-outlet>
+
+
+
+
+
+
+
+
+<ion-content>
+
+    <ion-title>
+        <p>Healthy Breast</p>
+    </ion-title>
+
+    <ion-card>
+        <ion-img src="/assets/img/Cancer-mama-America-P.png"> </ion-img>
+    </ion-card>
+
+</ion-content>
+
+
+
+
+
+
+
+<ion-tabs>
+
+    <ion-tab-bar slot="bottom" color="danger">
+        <ion-tab-button [routerLink]="['/inicio/']">
+            <ion-icon name="home"></ion-icon>
+            <ion-label>Inicio</ion-label>
+        </ion-tab-button>
+
+
+
+        <ion-tab-button [routerLink]="['/autoexamen/']">
+            <ion-icon name="eye"></ion-icon>
+            <ion-label>Autoexamen</ion-label>
+        </ion-tab-button>
+
+        <ion-tab-button [routerLink]="['/recursos/']">
+            <ion-icon name="book"></ion-icon>
+            <ion-label>Recursos</ion-label>
+        </ion-tab-button>
+
+        <ion-tab-button [routerLink]="['/testimonio/']">
+            <ion-icon name="create"></ion-icon>
+            <ion-label>Testimonio</ion-label>
+        </ion-tab-button>
+
+    </ion-tab-bar>
+</ion-tabs>

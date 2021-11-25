@@ -1,0 +1,26 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-buttons danger="start">
+            <ion-back-button defaulHref></ion-back-button>
+        </ion-buttons>
+        <ion-title>Que debo buscar?</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-card>
+        <ion-img src="/assets/img/que_buscas.jpg"> </ion-img>
+    </ion-card>
+
+    <ion-item color="light">
+        <ion-icon slot="star" name="pin"></ion-icon>
+
+
+        <p>Mediante la autoexploración la mujer puede detectar diversas anomalías que los tumores generan en la zona de los senos.</p>
+    </ion-item>
+    <ion-button [routerLink]="['/autoexamen2/']">
+        <ion-icon name="arrow-redo"></ion-icon>
+        <ion-label>siguiente</ion-label>
+    </ion-button>
+
+</ion-content>
