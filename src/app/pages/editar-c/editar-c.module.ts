@@ -4,17 +4,17 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { RecordatorioPageRoutingModule } from './recordatorio-routing.module';
+import { EditarCPageRoutingModule } from './editar-c-routing.module';
 
-import { RecordatorioPage } from './recordatorio.page';
+import { EditarCPage } from './editar-c.page';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    RecordatorioPageRoutingModule
+    EditarCPageRoutingModule
   ],
-  declarations: [RecordatorioPage]
+  declarations: [EditarCPage]
 })
-export class RecordatorioPageModule {}
+export class EditarCPageModule {}

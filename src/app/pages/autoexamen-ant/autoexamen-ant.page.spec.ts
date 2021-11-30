@@ -1,19 +1,19 @@
 import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 import { IonicModule } from '@ionic/angular';
 
-import { CuestionarioEPage } from './cuestionario-e.page';
+import { AutoexamenAntPage } from './autoexamen-ant.page';
 
-describe('CuestionarioEPage', () => {
-  let component: CuestionarioEPage;
-  let fixture: ComponentFixture<CuestionarioEPage>;
+describe('AutoexamenAntPage', () => {
+  let component: AutoexamenAntPage;
+  let fixture: ComponentFixture<AutoexamenAntPage>;
 
   beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
-      declarations: [ CuestionarioEPage ],
+      declarations: [ AutoexamenAntPage ],
       imports: [IonicModule.forRoot()]
     }).compileComponents();
 
-    fixture = TestBed.createComponent(CuestionarioEPage);
+    fixture = TestBed.createComponent(AutoexamenAntPage);
     component = fixture.componentInstance;
     fixture.detectChanges();
   }));

@@ -1,9 +1,82 @@
 <ion-header>
     <ion-toolbar>
-        <ion-title>Cuestionario de autoexamen</ion-title>
+        <ion-buttons danger="start">
+            <ion-back-button defaulHref></ion-back-button>
+        </ion-buttons>
+        <ion-title><b>Cuestionario de autoexamen</b></ion-title>
+
+        <h3><b>Describe</b></h3>
+
     </ion-toolbar>
 </ion-header>
 
 <ion-content>
+    <ion-item>
+        <ion-label>Que encontraste/sentiste? </ion-label>
+        <ion-input color="primary" clearInput> </ion-input><br>
+    </ion-item>
 
-</ion-content>
+    <ion-item>
+        <ion-label>Donde lo has sentido</ion-label>
+        <ion-select interface="popover" class="custom-options">
+            <ion-select-option value="una mama">Una mama </ion-select-option>
+            <ion-select-option value="ambas mamas">Ambas mamas </ion-select-option>
+            <ion-select-option value=" axila">Axila debajo del brazo </ion-select-option>
+
+        </ion-select>
+    </ion-item>
+    <ion-item>
+        <ion-label>Has visto o sentido esto antes?</ion-label>
+        <ion-select interface="popover" class="custom-options">
+            <ion-select-option value="si">Si, durante un tiempo </ion-select-option>
+            <ion-select-option value="no">No, primera vez </ion-select-option>
+            <ion-select-option value="ahora lo siento mas">Ahora lo siento mas </ion-select-option>
+            <ion-select-option value="ahora lo siento menos">Ahora lo siento menos </ion-select-option>
+            <ion-select-option value="no estoy segura">No estoy segura </ion-select-option>
+        </ion-select>
+
+    </ion-item>
+    <ion-item>
+        <ion-label>Que tanto lo sientes?</ion-label>
+        <ion-select interface="popover" class="custom-options">
+            <ion-select-option value="persistente">Persistente </ion-select-option>
+            <ion-select-option value="va y viene">Va y viene </ion-select-option>
+        </ion-select>
+    </ion-item>
+    <ion-item>
+        <ion-label>Hay secrecion?</ion-label>
+        <ion-select interface="popover" class="custom-options">
+            <ion-select-option value="si">Si </ion-select-option>
+            <ion-select-option value="no">No </ion-select-option>
+        </ion-select>
+
+    </ion-item>
+    <ion-item>
+        <ion-label>Sientes dolor?</ion-label>
+        <ion-select interface="popover" class="custom-options">
+            <ion-select-option value="si">Si </ion-select-option>
+            <ion-select-option value="no">No </ion-select-option>
+        </ion-select>
+    </ion-item>
+    <ion-item>
+        <ion-label>Hay cambio en el tamaño de la mama?</ion-label>
+        <ion-select interface="popover" class="custom-options">
+            <ion-select-option value="si">Si </ion-select-option>
+            <ion-select-option value="no">No </ion-select-option>
+        </ion-select>
+    </ion-item>
+    <ion-item>
+        <ion-label>Estas mestruando?</ion-label>
+        <ion-select interface="popover" class="custom-options">
+            <ion-select-option value="si">Si </ion-select-option>
+            <ion-select-option value="no">No </ion-select-option>
+        </ion-select>
+    </ion-item>
+
+    <ion-content>
+        <ion-button color="danger" expand="block" fill="outline">Guardar</ion-button>
+        <ion-button ion-button full icon-left color="danger" [routerLink]="['/recomendaciones/']">
+            <ion-icon name="log-out"></ion-icon>
+            <ion-label>Recomendaciones</ion-label>
+        </ion-button>
+    </ion-content>

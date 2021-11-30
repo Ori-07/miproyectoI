@@ -1,9 +1,49 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>tratamiento</ion-title>
-  </ion-toolbar>
+    <ion-toolbar color=danger>
+        <ion-buttons slot="start">
+            <ion-back-button defaulHref></ion-back-button>
+        </ion-buttons>
+        <ion-title>
+            <h1>Registro de tratamiento </h1>
+        </ion-title>
+
+    </ion-toolbar>
 </ion-header>
 
 <ion-content>
 
+    <ion-item>
+        <ion-label>Doctor tratante: </ion-label><br>
+        <ion-input color="primary" clearInput> </ion-input>
+    </ion-item>
+
+    <ion-item>
+        <ion-label>Descripcion: </ion-label><br>
+        <ion-input color="primary" clearInput> </ion-input>
+    </ion-item>
+
+    <ion-item>
+        <ion-label>Tipo de tratamiento: </ion-label>
+        <ion-input color="primary" clearInput> </ion-input>
+    </ion-item>
+
+    <ion-item>
+        <ion-label>Dosis: </ion-label><br>
+        <ion-input color="primary" clearInput> </ion-input>
+    </ion-item>
+
+    <ion-item>
+        <ion-label>Frecuencia: </ion-label><br>
+        <ion-input color="primary" clearInput> </ion-input>
+    </ion-item>
+
+
+
+</ion-content>
+<ion-content>
+    <ion-button color="danger" expand="block" fill="outline">Agregar</ion-button>
+    <ion-button color="danger" expand="block" fill="outline">Modificar</ion-button>
+    <ion-button color="danger" expand="block" fill="outline">Eliminar</ion-button>
+
+    <ion-label>debo crear alarma de frecuencia</ion-label>
 </ion-content>

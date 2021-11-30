@@ -1,10 +1,17 @@
 <ion-header>
-    <ion-toolbar>
-
+    <ion-toolbar color="danger">
+        <ion-buttons slot="start">
+            <ion-back-button></ion-back-button>
+        </ion-buttons>
 
         <ion-title>Información personal</ion-title>
+
     </ion-toolbar>
 </ion-header>
+<ion-list>
+    <ion-item [routerLink]="['/editar-p/']">Editar perfil </ion-item>
+    <ion-item [routerLink]="['/editar-c/']">Editar contraseña</ion-item>
+</ion-list>
 
 <ion-content>
 

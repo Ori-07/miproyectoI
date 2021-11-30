@@ -1,15 +1,15 @@
 <ion-header>
+    <ion-toolbar color="danger">
+
+    </ion-toolbar>
     <ion-toolbar>
         <ion-buttons slot="start">
-
-
-            <ion-icon (click)="openMenu()" style="font-size: 40px;" color="background" name="options"></ion-icon>
+            <ion-icon (click)="openMenu()" style="font-size: 40px;" color="dark" name="options"></ion-icon>
             <br>
             <br>
             <ion-img [src]="img"></ion-img>
         </ion-buttons>
     </ion-toolbar>
-
 
 </ion-header>
 
@@ -21,16 +21,21 @@
 
 <ion-menu side="start" menuId="first" contentId="main">
     <ion-header>
-        <ion-toolbar color="primary">
-            <ion-title>Menu</ion-title>
+        <ion-toolbar color="danger">
+            <ion-title>
+                <h1>Menu Principal</h1>
+            </ion-title>
         </ion-toolbar>
     </ion-header>
     <ion-content>
         <ion-list>
 
-            <ion-item [routerLink]="['/perfil/']">Mi perfil</ion-item>
+
+
+            <ion-item [routerLink]="['/perfil/']"> Mi perfil </ion-item>
             <ion-item [routerLink]="['/tratamiento/']">Tratamiento</ion-item>
-            <ion-item [routerLink]="['/recordatorio/']">Recordatorio</ion-item>
+            <ion-item [routerLink]="['/prox-autoexamen/']">Próximo autoexamen</ion-item>
+            <ion-item [routerLink]="['/autoexamen-ant/']">Autoexamen anterior</ion-item>
             <ion-item [routerLink]="['/privacidad/']">Privacidad y condiciones de uso</ion-item>
             <ion-item [routerLink]="['/configuracion/']">Configuracion</ion-item>
             <ion-item>Compartir</ion-item>
@@ -53,7 +58,8 @@
 <ion-content>
 
     <ion-title>
-        <p>Healthy Breast</p>
+        <h1>Healthy Breast</h1>
+
     </ion-title>
 
     <ion-card>
@@ -71,7 +77,7 @@
 <ion-tabs>
 
     <ion-tab-bar slot="bottom" color="danger">
-        <ion-tab-button [routerLink]="['/inicio/']">
+        <ion-tab-button>
             <ion-icon name="home"></ion-icon>
             <ion-label>Inicio</ion-label>
         </ion-tab-button>
@@ -88,10 +94,12 @@
             <ion-label>Recursos</ion-label>
         </ion-tab-button>
 
-        <ion-tab-button [routerLink]="['/testimonio/']">
+        <ion-tab-button [routerLink]="['/cita/']">
             <ion-icon name="create"></ion-icon>
-            <ion-label>Testimonio</ion-label>
+            <ion-label>Cita Médica</ion-label>
         </ion-tab-button>
+
+
 
     </ion-tab-bar>
 </ion-tabs>

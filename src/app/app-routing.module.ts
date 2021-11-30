@@ -39,10 +39,7 @@ const routes: Routes = [
     path: 'recursos',
     loadChildren: () => import('./pages/recursos/recursos.module').then( m => m.RecursosPageModule)
   },
-  {
-    path: 'testimonio',
-    loadChildren: () => import('./pages/testimonio/testimonio.module').then( m => m.TestimonioPageModule)
-  },
+  
   {
     path: 'perfil',
     loadChildren: () => import('./pages/perfil/perfil.module').then( m => m.PerfilPageModule)
@@ -51,10 +48,7 @@ const routes: Routes = [
     path: 'tratamiento',
     loadChildren: () => import('./pages/tratamiento/tratamiento.module').then( m => m.TratamientoPageModule)
   },
-  {
-    path: 'recordatorio',
-    loadChildren: () => import('./pages/recordatorio/recordatorio.module').then( m => m.RecordatorioPageModule)
-  },
+  
   {
     path: 'privacidad',
     loadChildren: () => import('./pages/privacidad/privacidad.module').then( m => m.PrivacidadPageModule)
@@ -95,6 +89,30 @@ const routes: Routes = [
   {
     path: 'cuestionario-e',
     loadChildren: () => import('./pages/cuestionario-e/cuestionario-e.module').then( m => m.CuestionarioEPageModule)
+  },
+  {
+    path: 'editar-p',
+    loadChildren: () => import('./pages/editar-p/editar-p.module').then( m => m.EditarPPageModule)
+  },
+  {
+    path: 'editar-c',
+    loadChildren: () => import('./pages/editar-c/editar-c.module').then( m => m.EditarCPageModule)
+  },
+  {
+    path: 'cita',
+    loadChildren: () => import('./pages/cita/cita.module').then( m => m.CitaPageModule)
+  },
+  {
+    path: 'prox-autoexamen',
+    loadChildren: () => import('./pages/prox-autoexamen/prox-autoexamen.module').then( m => m.ProxAutoexamenPageModule)
+  },
+  {
+    path: 'autoexamen-ant',
+    loadChildren: () => import('./pages/autoexamen-ant/autoexamen-ant.module').then( m => m.AutoexamenAntPageModule)
+  },
+  {
+    path: 'recomendaciones',
+    loadChildren: () => import('./pages/recomendaciones/recomendaciones.module').then( m => m.RecomendacionesPageModule)
   },
   
 
