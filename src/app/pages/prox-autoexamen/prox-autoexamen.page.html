@@ -1,9 +1,74 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>proxAutoexamen</ion-title>
-  </ion-toolbar>
+    <ion-toolbar color="danger">
+        <ion-buttons slot="start">
+            <ion-back-button></ion-back-button>
+        </ion-buttons>
+        <h2 text-center>Autoexamen de mamas</h2>
+
+    </ion-toolbar>
 </ion-header>
 
 <ion-content>
+
+    <ion-item>
+        <h3>último día de tú menstruación</h3>
+    </ion-item>
+    <ion-item>
+        <ion-icon name="calendar"></ion-icon>
+        <ion-datetime placeho="Cita" display-format="MMM DD, YYYY" cancelText="cancelar!!!">
+        </ion-datetime>
+    </ion-item>
+
+
+
+    <ion-item>
+        <h3>Duración media del ciclo</h3>
+        <ion-select interface="popover" class="custom-options">
+            <ion-select-option value="21">21 </ion-select-option>
+            <ion-select-option value="22">22</ion-select-option>
+            <ion-select-option value="23">23</ion-select-option>
+            <ion-select-option value="24">24</ion-select-option>
+            <ion-select-option value="25">25</ion-select-option>
+            <ion-select-option value="26">26</ion-select-option>
+            <ion-select-option value="27">27</ion-select-option>
+            <ion-select-option value="28">28</ion-select-option>
+            <ion-select-option value="29">29</ion-select-option>
+            <ion-select-option value="30">30</ion-select-option>
+            <ion-select-option value="31">31</ion-select-option>
+            <ion-select-option value="32">32</ion-select-option>
+            <ion-select-option value="33">33</ion-select-option>
+            <ion-select-option value="34">34</ion-select-option>
+            <ion-select-option value="35">35</ion-select-option>
+        </ion-select>
+    </ion-item>
+
+    <ion-item>
+        <h3>Fecha sugerida</h3>
+    </ion-item>
+    <ion-item>
+        <ion-icon name="calendar"></ion-icon>
+        <ion-datetime placeho="Cita" display-format="MMM DD, YYYY" cancelText="cancelar!!!">
+        </ion-datetime>
+    </ion-item>
+    <ion-content>
+        <ion-button color="danger" expand="block" fill="outline">Guardar</ion-button>
+    </ion-content>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 </ion-content>

@@ -53,10 +53,7 @@ const routes: Routes = [
     path: 'privacidad',
     loadChildren: () => import('./pages/privacidad/privacidad.module').then( m => m.PrivacidadPageModule)
   },
-  {
-    path: 'configuracion',
-    loadChildren: () => import('./pages/configuracion/configuracion.module').then( m => m.ConfiguracionPageModule)
-  },
+  
   {
     path: 'autoexamen1',
     loadChildren: () => import('./pages/autoexamen1/autoexamen1.module').then( m => m.Autoexamen1PageModule)

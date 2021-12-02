@@ -1,21 +1,23 @@
 <ion-header>
-    <ion-toolbar>
-        <ion-buttons danger="start">
+    <ion-toolbar color="danger">
+        <ion-buttons slot="start">
             <ion-back-button defaulHref></ion-back-button>
         </ion-buttons>
+        <h1 text-center>Encontraste algo extraño?</h1>
+
     </ion-toolbar>
 </ion-header>
-<h1>Encontraste algo extraño?</h1>
+
 <ion-content>
     <ion-card>
-        <ion-img src="/assets/img/analisis-de-los-datos.png"> </ion-img>
+        <ion-img src="/assets/img/lupa1.jpg"> </ion-img>
     </ion-card>
-    <ion-button [routerLink]="['/respira/']">
+    <ion-button color="success" [routerLink]="['/respira/']">
         <ion-icon name="sad"></ion-icon>
         <ion-label>Si, puede ser</ion-label>
 
     </ion-button>
-    <ion-button [routerLink]="['/prox-autoexamen/']">
+    <ion-button color="success" [routerLink]="['/prox-autoexamen/']">
         <ion-icon name="happy"></ion-icon>
         <ion-label>No</ion-label>
     </ion-button>

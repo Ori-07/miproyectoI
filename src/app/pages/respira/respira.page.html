@@ -1,11 +1,12 @@
 <ion-header>
-    <ion-toolbar>
-        <ion-buttons danger="start">
+    <ion-toolbar color="danger">
+        <ion-buttons slot="start">
             <ion-back-button defaulHref></ion-back-button>
         </ion-buttons>
+        <h1 text-center>Espera un momento...!</h1>
+
     </ion-toolbar>
 </ion-header>
-<h1>Espera un momento</h1>
 
 <h2>No te angusties, tómate unos minutos inhala y exhala </h2>
 <ion-content>
@@ -14,7 +15,7 @@
         <h2>Cuando estés calmada continúa</h2>
     </ion-card>
 
-    <ion-button [routerLink]="['/cuestionario-e/']">
+    <ion-button color="success" [routerLink]="['/cuestionario-e/']">
         <ion-icon name="arrow-redo-sharp"></ion-icon>
         <ion-label>Continuar</ion-label>
 

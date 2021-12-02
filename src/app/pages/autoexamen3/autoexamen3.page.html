@@ -1,20 +1,17 @@
 <ion-header>
-    <ion-toolbar>
-        <ion-buttons danger="start">
+    <ion-toolbar color="danger">
+        <ion-buttons slot="start">
             <ion-back-button defaulHref></ion-back-button>
         </ion-buttons>
-        <h1>Acostada</h1>
-        <ion-item color="color">
-            <ion-icon slot="star" name="pin"></ion-icon>
+        <h1 text-center>Frente al espejo</h1>
 
-
-            <h5>Puedes realizar la exploracion tumbada, acuestate sobre tu espalda y coloca una toalla doblada o una almohada debajo de tu hombro derecho, y lleva tu mano hasta la cabeza. Entonces con los dedos de la mano izquierda unidos y planos repite
-                los mismos pasos anteriores. Con el brazo levantado y la mano detras de la nuca, palpar el pecho. con los tres dedos centrales juntos y planos de la mano izquierda, realiza movimientos concentricos o espirales alrededor de la mama, presionando
-                suave pero firmemente con las yemas de los dedos y efectuando movimientos circulares en cada punto palpado, desde la periferia de la mama hasta el pezón, y en el sentido de las agujas del reloj.
-
-            </h5>
-        </ion-item>
     </ion-toolbar>
+    <div class="contenedor">
+
+        <p> Acuestate sobre tu espalda y coloca una almohada debajo de tu hombro derecho, lleva tu mano hasta la cabeza. con los tres dedos centrales juntos y planos de la mano izquierda, realiza movimientos concentricos o espirales alrededor de la mama,
+            presionando suave pero firmemente con las yemas de los dedos y efectuando movimientos circulares en cada punto palpado, desde la periferia de la mama hasta el pezón, y en el sentido de las agujas del reloj.
+    </div>
+
 </ion-header>
 
 <ion-content>
@@ -22,7 +19,7 @@
         <ion-img src="/assets/img/mama2.gif"> </ion-img>
     </ion-card>
 
-    <ion-button [routerLink]="['/autoexamen4/']">
+    <ion-button ion-button full icon-left color="success" [routerLink]="['/autoexamen4/']">
         <ion-icon name="arrow-redo"></ion-icon>
         <ion-label>siguiente</ion-label>
     </ion-button>

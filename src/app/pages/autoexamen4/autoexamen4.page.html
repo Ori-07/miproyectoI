@@ -1,17 +1,18 @@
 <ion-header>
-    <ion-toolbar>
-        <ion-buttons danger="start">
+    <ion-toolbar color="danger">
+        <ion-buttons slot="start">
             <ion-back-button defaulHref></ion-back-button>
         </ion-buttons>
-        <h1>En la misma posición anterior</h1>
-        <ion-item color="color">
-            <ion-icon slot="star" name="pin"></ion-icon>
+        <h1 text-center>En la misma posición anterior</h1>
 
 
-            <h4>Aprieta los pezones suavemente para comprobar si hay sangre o cualquier secreción que no tengas normalmente. Asegurate que la parte superior de tus brazos no estan hinchados. Recuerda que debes mantener los dedos juntos y oprimir con los dedos
-                planos, no con las puntas. Si oprimes demasiado, no podras sentir nada, si no oprimes lo suficiente, no podrá detectar en profundida. Repite el proceso con el otro brazo.</h4>
-        </ion-item>
     </ion-toolbar>
+    <div class="contenedor">
+
+        <p> Aprieta los pezones suavemente para comprobar si hay sangre o cualquier secreción que no tengas normalmente. Asegurate que la parte superior de tus brazos no estan hinchados. Recuerda que debes mantener los dedos juntos y oprimir con los dedos
+            planos, no con las puntas. Si oprimes demasiado, no podras sentir nada, si no oprimes lo suficiente, no podrá detectar en profundida. Repite el proceso con el otro brazo.</p>
+
+    </div>
 </ion-header>
 
 <ion-content>
@@ -19,9 +20,8 @@
         <ion-img src="/assets/img/mama3.gif"> </ion-img>
     </ion-card>
 
-    <ion-button [routerLink]="['/autoexamen5/']">
+    <ion-button ion-button full icon-left color="success" [routerLink]="['/autoexamen5/']">
         <ion-icon name="arrow-redo"></ion-icon>
         <ion-label>siguiente</ion-label>
     </ion-button>
-
 </ion-content>

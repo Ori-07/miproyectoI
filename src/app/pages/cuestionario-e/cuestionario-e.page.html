@@ -1,11 +1,10 @@
 <ion-header>
-    <ion-toolbar>
-        <ion-buttons danger="start">
+    <ion-toolbar color="danger">
+        <ion-buttons slot="start">
             <ion-back-button defaulHref></ion-back-button>
         </ion-buttons>
-        <ion-title><b>Cuestionario de autoexamen</b></ion-title>
+        <h1 text-center>Cuestionario de autoexamen</h1>
 
-        <h3><b>Describe</b></h3>
 
     </ion-toolbar>
 </ion-header>
@@ -75,7 +74,7 @@
 
     <ion-content>
         <ion-button color="danger" expand="block" fill="outline">Guardar</ion-button>
-        <ion-button ion-button full icon-left color="danger" [routerLink]="['/recomendaciones/']">
+        <ion-button ion-button full icon-left color="success" [routerLink]="['/recomendaciones/']">
             <ion-icon name="log-out"></ion-icon>
             <ion-label>Recomendaciones</ion-label>
         </ion-button>

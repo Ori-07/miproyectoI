@@ -1,5 +1,5 @@
 <ion-header>
-    <ion-toolbar>
+    <ion-toolbar color="danger">
         <ion-buttons slot="start">
             <ion-back-button defaulHref></ion-back-button>
         </ion-buttons>
@@ -8,43 +8,33 @@
     </ion-toolbar>
 </ion-header>
 
+
 <ion-content>
-    <ion-card>
 
-        <ion-item color="micolor">
-            <ion-icon slot="star" name="pin"></ion-icon>
+    <div class="contenedor">
 
-            <h4>Un autoexamen de mamas es un chequeo que una mujer se realiza en casa para buscar cambios o problemas en el tejido mamario.</h4>
-        </ion-item>
-    </ion-card>
+        <h2> Un autoexamen de mamas es un chequeo realizado en casa.</h2>
 
-    <ion-card>
-        <p></p>
-        <h3>¿Cuando debo realizarmelo?</h3>
+        <div class="tarjeta">
+            <h3>¿Cuando debo realizarmelo?</h3>
 
-        <ion-item color="micolor">
-            <ion-icon slot="star" name="pin"></ion-icon>
+            <p>
+                El mejor momento para hacerse un autoexamen de las mamas es más o menos de 3 a 5 días después del comienzo del periodo, donde las mamas no están tan sensibles. Si usted ha llegado a la menopausia, realícese el examen el mismo día todos los meses.
+            </p>
+
+        </div>
 
 
-            <h4> El mejor momento para hacerse un autoexamen de las mamas es más o menos de 3 a 5 días después del comienzo del periodo. Las mamas no están tan sensibles o con protuberancias en ese tiempo en su ciclo menstrual. Si usted ha llegado a la menopausia,
-                realícese el examen el mismo día todos los meses.</h4>
-        </ion-item>
-    </ion-card>
+        <div class="tarjeta">
 
-    <ion-card>
-        <p></p>
-        <h3>¿A partir de qué edad puedo realizar mi autoexploración?</h3>
-
-        <ion-item color="micolor">
-            <ion-icon slot="star" name="pin"></ion-icon>
+            <h3>¿A partir de qué edad puedo realizar<br> mi autoexploración?</h3>
 
 
-            <h4> No existe una edad específica para comenzar a realizarla, pero generalmente se recomienda a partir de los 20 años de edad . </h4>
-        </ion-item>
-    </ion-card>
-    <ion-button ion-button full icon-left color="danger" [routerLink]="['/autoexamen1/']">
+            <p>
+                No existe una edad específica para comenzar a realizarla, pero generalmente se recomienda a partir de los 20 años de edad .
+            </p>
+        </div>
 
-
-        <ion-label>Comenzar</ion-label>
-    </ion-button>
+        <ion-button color="danger" [routerLink]="['/autoexamen1/']" expand="block" fill="outline">Comenzar</ion-button>
+    </div>
 </ion-content>

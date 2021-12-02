@@ -1,17 +1,19 @@
 <ion-header>
-    <ion-toolbar>
-        <ion-buttons danger="start">
+    <ion-toolbar color="danger">
+        <ion-buttons slot="start">
             <ion-back-button defaulHref></ion-back-button>
         </ion-buttons>
-        <h1>Frente Al Espejo</h1>
-        <ion-item color="color">
-            <ion-icon slot="star" name="pin"></ion-icon>
+        <h1 text-center>Frente al espejo</h1>
 
-
-            <h3>Con los brazos relajados observar detenidamente el aspecto de tus mamas (contorno, tamaño, alteraciones de la superficie, tales como hinchazón, hoyuelos, erupciones cutáneas, cambios de color de la piel o si cualquiera de los pezones se vuelve
-                hacia dentro). Repite la misma operación con las manos en la nuca y las manos en la cadera.</h3>
-        </ion-item>
     </ion-toolbar>
+    <div class="contenedor">
+
+        <p> Con los brazos relajados observar detenidamente el aspecto de tus mamas (contorno, tamaño, alteraciones de la superficie, tales como hinchazón, hoyuelos, erupciones cutáneas, cambios de color de la piel o si cualquiera de los pezones se vuelve
+            hacia dentro). Repite la misma operación con las manos en la nuca y las manos en la cadera.</p>
+
+    </div>
+
+
 </ion-header>
 
 <ion-content>
@@ -19,7 +21,7 @@
         <ion-img src="/assets/img/mama1.gif"> </ion-img>
     </ion-card>
 
-    <ion-button [routerLink]="['/autoexamen3/']">
+    <ion-button ion-button full icon-left color="success" [routerLink]="['/autoexamen3/']">
         <ion-icon name="arrow-redo"></ion-icon>
         <ion-label>siguiente</ion-label>
     </ion-button>

@@ -1,9 +1,30 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>autoexamenAnt</ion-title>
-  </ion-toolbar>
+    <ion-toolbar color="danger">
+        <ion-buttons slot="start">
+            <ion-back-button></ion-back-button>
+        </ion-buttons>
+        <ion-title>Reportes de autoexamen</ion-title>
+    </ion-toolbar>
+
+
+    <ion-img src="/assets/img/lupa1.jpg" style="margin-right: 40px; width: 300px;"> </ion-img>
+    <ion-card>
+        <h4><b>Aquí puedes revisar tus autoexamenes anteriores, solamente podrás visualizarlos si llenaste el cuestionario por haber encontrado algo.</b></h4>
+    </ion-card>
+
+
 </ion-header>
 
 <ion-content>
+
+    <ion-item>
+        <h3>Año en que lo realizaste</h3>
+    </ion-item>
+    <ion-item>
+        <ion-icon name="calendar"></ion-icon>
+        <ion-datetime placeho="Cita" display-format="YYYY" cancelText="cancelar!!!">
+        </ion-datetime>
+    </ion-item>
+
 
 </ion-content>

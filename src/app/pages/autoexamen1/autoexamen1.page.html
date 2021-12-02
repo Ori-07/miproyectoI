@@ -1,5 +1,5 @@
 <ion-header>
-    <ion-toolbar>
+    <ion-toolbar color="danger">
         <ion-buttons slot="start">
             <ion-back-button defaulHref></ion-back-button>
         </ion-buttons>
@@ -13,13 +13,16 @@
         <ion-img src="/assets/img/que_buscas.jpg"> </ion-img>
     </ion-card>
 
-    <ion-item color="color">
+    <ion-item>
         <ion-icon slot="star" name="pin"></ion-icon>
-
-
-        <h3>Mediante la autoexploración la mujer puede detectar diversas anomalías que los tumores generan en la zona de los senos.</h3>
     </ion-item>
-    <ion-button ion-button full icon-left color="danger" [routerLink]="['/autoexamen2/']">
+    <div class="contenedor">
+
+        <p> Mediante la autoexploración la mujer puede detectar diversas anomalías que los tumores generan en la zona de los senos.</p>
+
+    </div>
+
+    <ion-button ion-button full icon-left color="success" [routerLink]="['/autoexamen2/']">
         <ion-icon name="arrow-redo"></ion-icon>
         <ion-label>siguiente</ion-label>
     </ion-button>
