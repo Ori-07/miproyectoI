@@ -1,25 +1,30 @@
 <ion-header>
-    <ion-toolbar color="green ">
+    <ion-toolbar color="danger ">
         <ion-title>
             Lo mejor de ti, eres tú
         </ion-title>
     </ion-toolbar>
 </ion-header>
+<ion-card>
+    <ion-img src="/assets/img/jpg.jpg"> </ion-img>
+</ion-card>
 
 <ion-content class="auth-form">
     <ion-grid>
+
         <ion-row>
             <ion-col align-self-center>
-                <ion-button [routerLink]="['/login']" expand="block" color="danger"> <i>Iniciar sesión</i></ion-button>
+                <ion-button [routerLink]="['/login']" expand="block" color="success"> <i>Iniciar sesión</i></ion-button>
                 <span class="divider line one-line">or</span>
                 <ion-button [routerLink]="['/registration']" expand="block" color="danger">Registrarse</ion-button>
 
 
 
-                <span class="already">Aún no te has registrado?</span>
+                <span color="success" class="already">Aún no te has registrado?</span>
 
 
             </ion-col>
         </ion-row>
     </ion-grid>
+
 </ion-content>
